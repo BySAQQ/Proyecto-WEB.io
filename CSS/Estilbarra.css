@@ -1,0 +1,37 @@
+.header{ /*Barra*/
+	background-color:#D8D9DA;
+	height: 10px;
+	position: fixed;
+	width:100%;
+	top:0;
+	left:0;
+}
+.nav{
+	display:flex;
+	justify-content: space-between;
+}
+.nav-link{
+	color:black;
+	text-decoration:none;
+}
+.login{ /*Administrador*/
+	font-size:15px;
+	font-weight:bold;
+	padding:0 40px;
+	line-height:80px;
+}
+.nav-menu{
+	display:flex;
+	list-style:none;
+}
+.lista{ 
+	front-size:18px;
+	margin:0 8px;
+	line-height:80px;
+	width: max-content;
+}
+.baner-usuarios{
+	box-shadow: -1px 1px 7px 0px #red;
+	padding:10px;
+	text-align: center	;
+}

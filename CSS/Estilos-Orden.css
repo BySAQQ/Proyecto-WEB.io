@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 5px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Public Sans", sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+    background-color: #eef7fc;
+}
+
+.contenedor>* {
+    box-shadow: -1px 1px 7px 0px;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.header {
+    grid-area: header;
+    background-color: #6dade2;
+}
+
+.imagen {
+    height: 120%;
+    width: 90%;
+}
+
+.navbar {
+    grid-area: navbar;
+    justify-content: space-between;
+    display: flex;
+    background-color: #D8D9DA;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+}
+
+.resalt {
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.resalt:hover {
+    background-color: #85AEDD;
+    transition: 0.7s;
+}
+
+.lista {
+    font-size: 15px;
+    padding: 2px;
+}
+
+.login {
+    /*Administrador*/
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.main {
+    grid-area: main;
+    background-color: #f5f5f5;
+}
+
+#botones-izq {
+    display: flex;
+    float: left;
+    width: 40%;
+    margin-left: 50px;
+}
+
+.boton-izq {
+    list-style: none;
+}
+
+.texto-boton {
+    font-size: 18px;
+    border: 1px solid grey;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#botones-der {
+    display: flex;
+    height: 65px;
+    padding: 15px 10px;
+}
+
+#boton1 {
+    margin-left: 350px;
+    margin-right: 12px;
+    background-color: #a72727;
+    border-radius: 10px;
+    color: white;
+}
+
+#boton2 {
+    margin-right: 12px;
+    background: #8c96a0;
+    border-radius: 10px;
+}
+
+#boton3 {
+    background-color: #33b14e;
+    border-radius: 10px;
+    color: white;
+}
+
+#tab-orden {
+    background-color: rgb(165, 106, 212);
+    text-align: left;
+    border-collapse: collapse;
+    width: 95%;
+    margin: auto;
+    font-size: 16px;
+}
+
+thead {
+    font-size: 16px;
+    background-color: #e7e7e7;
+    border: 1px solid#111;
+    color: black;
+}
+
+td {
+    border: 1px solid#111;
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+tr:hover td {
+    background-color: #afafaf;
+    color: white;
+}
+
+.pie {
+    grid-area: pie;
+    background-color: #8c96a0;
+}
+
+.contenedor {
+    display: grid;
+    gap: 4px;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 50px auto 100px;
+    grid-template-areas: "header" "navbar" "main" "pie";
+}

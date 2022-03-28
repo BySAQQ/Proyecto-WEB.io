@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 5px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Public Sans", sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+    background-color: #eef7fc;
+}
+
+.contenedor>* {
+    box-shadow: -1px 1px 7px 0px;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.header {
+    grid-area: header;
+    background-color: #85aedd;
+}
+
+.imagen {
+    height: 120%;
+    width: 90%;
+}
+
+.navbar {
+    grid-area: navbar;
+    justify-content: space-between;
+    display: flex;
+    background-color: #D8D9DA;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+}
+
+.resalt {
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.resalt:hover {
+    background-color: #85AEDD;
+    transition: 0.7s;
+}
+
+.lista {
+    font-size: 15px;
+    padding: 2px;
+}
+
+.login {
+    /*Administrador*/
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.main {
+    grid-area: main;
+    background-color: #f5f5f5;
+}
+
+.tabla-inv {
+    margin-left: 10%;
+    height: 400px;
+}
+
+.celda-lat {
+    width: 30%;
+    background-color: #677386;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.usuarios {
+    width: 100%;
+    height: 400px;
+}
+
+.no-link {
+    color: white;
+    text-decoration: none;
+}
+
+.resalt2 {
+    padding: 8px 60px;
+    border-radius: 4px;
+}
+
+.resalt2:hover {
+    background-color: #85dd98;
+    transition: 0.10s;
+}
+
+li {
+    text-align: left;
+    list-style: none;
+}
+
+.primera {
+    width: 40%;
+    height: 300px;
+    float: left;
+    background-color: #85AEDD;
+}
+
+#Nombre-Us {
+    padding: 10px 15px;
+    border: 1px solid #111;
+    border-radius: 2px;
+}
+
+#Asig-Usuario {
+    padding: 10px 15px;
+    border: 1px solid #111;
+    border-radius: 2px;
+}
+
+#Cedula_us {
+    padding: 10px 15px;
+    border: 1px solid #111;
+    border-radius: 2px;
+}
+
+#Tel_us {
+    padding: 10px 15px;
+    border: 1px solid #111;
+    border-radius: 2px;
+}
+
+#Dirc_us {
+    padding: 10px 15px;
+    border: 1px solid #111;
+    border-radius: 2px;
+}
+
+#Email_us {
+    padding: 10px 15px;
+    border: 1px solid #111;
+    border-radius: 2px;
+}
+
+#Cargo_us {
+    padding: 10px 15px;
+    border: 1px solid #111;
+    border-radius: 2px;
+}
+
+.segunda {
+    width: 60%;
+    height: 300px;
+    float: left;
+    background-color: #85AEDD;
+}
+
+#usuario_siep {
+    padding: 10px 15px;
+    border: 1px solid #111;
+    border-radius: 2px;
+}
+
+#pass_siep {
+    padding: 10px 15px;
+    border: 1px solid #111;
+    border-radius: 2px;
+}
+
+#lista_User {
+    padding: 10px 15px;
+    border: 1px solid #111;
+    border-radius: 2px;
+    display: flex;
+    margin: 0 40px;
+}
+
+.botas {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    background-color: #85AEDD;
+}
+
+.boton1 {
+    padding: 5px 20px;
+    background: #3fce54;
+    color: white;
+    border-radius: 10px;
+}
+
+.boton2 {
+    background: #a72727;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+
+.pie {
+    grid-area: pie;
+    background-color: #8c96a0;
+}
+
+.contenedor {
+    display: grid;
+    gap: 4px;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 50px auto 100px;
+    grid-template-areas: "header" "navbar" "main" "pie";
+}
