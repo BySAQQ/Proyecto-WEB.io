@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVIFRIO DE CODAZZI | Inventario </title>
+    <link rel="stylesheet" href="CSS/Estilo-Inv-agr-produc.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/Logo1.png">
+
+</head>
+
+<body class="contenedor">
+
+    <header class="header">
+        <img class="imagen" src="img/Font.png" alt="Fondo Servifrio"> </header>
+
+
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li class="lista"><a href="Inicio.html" class="resalt nav-link">Inicio</a></li>
+            <li class="lista"><a href="Inventario.html" class="resalt nav-link">Inventario</a></li>
+            <li class="lista"><a href="Usuarios.html" class="resalt nav-link">Usuarios</a></li>
+            <li class="lista"><a href="Clientes.html" class="resalt nav-link">Clientes</a></li>
+            <li class="lista"><a href="Proveedor.html" class="resalt nav-link">Proveedores</a></li>
+            <li class="lista"><a href="Servicios.html" class="resalt nav-link">Servicios</a></li>
+        </ul>
+
+        <a href="#" class="login nav-link"> salir </a>
+        <a href="Perfil.html" class="login nav-link"> Administrador </a>
+
+    </nav>
+    <main class="main">
+        <ul class="botones">
+            <li class="texto-boton"><a href="AgregarPro.html">Agregar Producto</a></li>
+            <li class="texto-boton"><a href="#">Editar Producto</a></li>
+            <li class="texto-boton"><a href="#">Actualizar</a></li>
+        </ul>
+        <table class="tabla1">
+            <tr>
+                <td>
+                    <table class="tipos">
+                        <tr>
+                            <td><a href="#" class="resalt no-link">Motores</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" class="resalt no-link">Accesorios</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" class="resalt no-link">Refrigerantes</a></td>
+                        </tr>
+                        <tr>
+                            <td> <a href="#" class="resalt no-link">Otros </a></td>
+                        </tr>
+                    </table>
+                </td>
+
+                <td class="td-formulario">
+                    <form action="" method="post" id="formulario">
+                        <h1>Agregar Producto</h1>
+                        <div class="grupos">
+                            <div class="primera">
+                                <input type="number" name="" id="codigo_pro" placeholder="Codigo producto ej:33" required>
+
+
+                                <input type="text" name="" id="nom_pro" placeholder="Nombre producto" required>
+
+
+                                <input type="number" name="" id="cantidad_pro" placeholder="Cantidad" required>
+                            </div>
+
+
+                            <div class="segunda">
+                                <input type="number" name="" id="precio_pro" placeholder="Precio producto: $$" required>
+
+
+                                <input type="text" name="" id="descrip_pro" placeholder="Descripcion producto:" required>
+
+
+
+                                <select name="" id="categ_pro">
+                                    <option value="Motores">Motores</option>
+                                    <option value="Accesorios">Accesorios</option>
+                                    <option value="Refrigerantes">Refrigerantes</option>
+                                    <option value="Otros">Otros </option>
+                                  </select>
+                            </div>
+                            <div>
+                                <input type="file" name="">
+                            </div>
+                            <div>
+                                <button type="submit" class="boton">Crear</button>
+                                <button type="reset" class="boton">Limpiar</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </td>
+
+            </tr>
+        </table>
+
+    </main>
+
+    <footer class="pie">Diseño por XAQQ</footer>
+</body>
+
+</html>
